@@ -3,17 +3,6 @@ import { SubTitle, Text } from "../../components/Texts/Texts";
 import { textVariants } from "../Slider";
 import * as S from "./styles";
 
-// Variantes de animação
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.5 } },
-};
-
-const photoVariants = {
-  hidden: { scale: 0.9, opacity: 0 },
-  visible: { scale: 1, opacity: 1, transition: { duration: 0.5 } },
-};
-
 export const About = () => {
   return (
     <S.Container id="link">

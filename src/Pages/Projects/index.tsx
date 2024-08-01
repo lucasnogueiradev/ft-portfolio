@@ -143,7 +143,7 @@ export function Projects() {
               <FaChevronLeft />
             </S.Arrow>
             <S.Card ref={highlightsRef}>
-              {filteredHighlights.map((repo, index) => {
+              {filteredHighlights.map((repo) => {
                 if (repo.topics && repo.topics.includes("emphasis")) {
                   return (
                     <RepositoryCard
@@ -155,6 +155,8 @@ export function Projects() {
                       updated_at={formatUpdatedDate(repo?.updated_at) || ""}
                     />
                   );
+                } else {
+                  return null;
                 }
               })}
             </S.Card>
@@ -193,6 +195,8 @@ export function Projects() {
                       updated_at={formatUpdatedDate(repo?.updated_at) || ""}
                     />
                   );
+                } else {
+                  return null;
                 }
               })}
             </S.Card>
@@ -229,6 +233,8 @@ export function Projects() {
                       updated_at={formatUpdatedDate(repo?.updated_at) || ""}
                     />
                   );
+                } else {
+                  return null;
                 }
               })}
             </S.Card>
@@ -265,6 +271,8 @@ export function Projects() {
                       updated_at={formatUpdatedDate(repo?.updated_at) || ""}
                     />
                   );
+                } else {
+                  return null;
                 }
               })}
             </S.Card>

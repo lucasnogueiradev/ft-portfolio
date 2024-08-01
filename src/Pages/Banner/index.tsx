@@ -1,13 +1,7 @@
-import { SetStateAction, useState } from "react";
 import { Sliderbar } from "../../components/Menu";
 import { Slider } from "../Slider";
 import { Container } from "./styles";
 export const Banner = () => {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex: SetStateAction<number>) => {
-    setIndex(selectedIndex);
-  };
   return (
     <Container>
       <section className="container-header">
