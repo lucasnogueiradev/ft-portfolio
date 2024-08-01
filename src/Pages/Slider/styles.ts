@@ -20,6 +20,7 @@ export const ContentPhoto = styled.div`
     display: none;
   }
 `;
+
 export const ProfilePhoto = styled.img.attrs({
   src: "9720029.jpg",
   alt: "Meu Perfil",
@@ -45,14 +46,12 @@ export const ContentText = styled.div`
   transition: ease 0.5s;
   @media (max-width: 999px) {
     width: 100%;
-
     text-align: center;
     margin: auto;
   }
 `;
 
 export const Texts = styled.span`
-  color: ${(props) => props.theme.colors.font};
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -85,7 +84,6 @@ export const Icons = styled.div`
       background: ${(props) => props.theme.colors.warning};
     }
     a {
-      /* height: 30px; */
       padding: 1.5rem;
       border-radius: 50%;
     }
@@ -105,7 +103,6 @@ export const Icons = styled.div`
     border-radius: 1rem;
     text-align: center;
     justify-content: center;
-
     margin: 2rem auto;
   }
 `;

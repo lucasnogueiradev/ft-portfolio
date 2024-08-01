@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa6";
-import { SubTitle, Title } from "../../components/Texts/Texts";
+import { SubTitle, Text, Title } from "../../components/Texts/Texts";
 import * as S from "./styles";
 import { Container } from "./styles";
 
@@ -35,7 +35,11 @@ export const Slider = () => {
               animate="visible"
             >
               <Title text="Lucas Souza Nogueira" size="large" />
-              <SubTitle text="Full Stack Pleno 👨🏾‍💻" />
+              <SubTitle text="Pleno Front-End Developer 👨🏾‍💻" />
+              <Text
+                text="(Portfólio ainda em desenvolvimento⚙️)"
+                size="small"
+              />
             </motion.div>
           </S.Texts>
 
@@ -61,7 +65,7 @@ export const Slider = () => {
                   className="icon-link"
                   rel="noopener noreferrer"
                   title="Visite meu perfil no GitHub"
-                  href="https://github.com/ZEROONZE"
+                  href="https://github.com/lucasnogueiradev"
                 >
                   <FaGithub />
                 </a>

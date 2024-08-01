@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { SubTitleProps, TextProps, TitleProps } from "./Texts";
 
 export const Title = styled.h2<TitleProps>`
-  color: ${(props) => props.theme.colors.white};
+  color: #fff;
 
   font-size: ${({ size }) => {
     switch (size) {
@@ -14,6 +14,7 @@ export const Title = styled.h2<TitleProps>`
         return "1.3rem";
     }
   }};
+
   font-weight: 600;
   margin-top: 20px;
   padding: 4px;
@@ -35,7 +36,6 @@ export const Title = styled.h2<TitleProps>`
           return "1.3rem";
       }
     }};
-    color: aliceblue;
   }
 `;
 
