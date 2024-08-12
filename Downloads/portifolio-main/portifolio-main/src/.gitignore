@@ -1,0 +1,36 @@
+# Dependências de node
+node_modules/
+
+# Arquivos de build
+build/
+
+# Arquivos de configuração do ambiente
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+*.log
+
+# Sistema de arquivos
+.DS_Store
+Thumbs.db
+
+# IDEs e editores
+.vscode/
+.idea/
+*.suo
+*.ntvs_analysis.dat
+*.ncb
+*.sdf
+*.opensdf
+*.suo
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+*.project
+*.classpath
+*.settings/

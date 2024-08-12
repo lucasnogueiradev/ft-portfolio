@@ -1,0 +1,190 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.MuiFormControl-root {
+  width: 100%;
+}
+
+* {
+  font-family: Roboto, "Roboto Light", serif;
+}
+
+.MuiBreadcrumbs-root {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.mini-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.mini-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.mini-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.link {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+#menu .MuiAccordion-rounded {
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+#menu .MuiAccordionDetails-root {
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+#menu .MuiAccordionSummary-content {
+  margin-right: -44px;
+  color: rgba(75, 85, 99, var(--tw-text-opacity)) !important;
+}
+
+.e-content {
+  max-height: 500px;
+}
+
+#menu,
+#menu * {
+  transition-delay: 0ms !important;
+}
+
+#user-menu li svg {
+  margin: 5px 10px;
+}
+
+.drawerContent {
+  padding-bottom: 6rem;
+  min-height: calc(100vh - 180px);
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #content,
+  #content * {
+    visibility: visible;
+  }
+
+  #content {
+    border: 1px solid #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .e-content {
+    max-height: none;
+  }
+
+  .no-print,
+  .no-print *,
+  form,
+  form * {
+    display: none !important;
+  }
+
+  a {
+    color: initial !important;
+    text-decoration: none !important;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.semScroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.semScroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@media (max-width: 768px) {
+  .md\:flex-nowrap .MuiFormControl-root {
+    margin: 0 0 1em;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+}
+
+.searchpai {
+  width: calc(100vw - 305px);
+  margin-left: 110px;
+}
+.icon {
+  color: #344563;
+}
+
+#search {
+  height: 30px;
+  padding: 3px 15px;
+  border: none;
+  width: 30%;
+  background-color: #fff;
+  min-width: 250px;
+}
+
+.search fieldset {
+  border: 1px solid #ddd;
+}
+
+.notificacao .lixeira {
+  display: none;
+}
+.notificacao:hover .lixeira {
+  display: block;
+}
+
+.backgroundHover:hover {
+  background: rgba(236, 236, 236, 0.54);
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+#bottom-bar {
+  background-color: #fe5000;
+  z-index: 1;
+}
+
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
